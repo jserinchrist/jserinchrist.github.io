@@ -19,6 +19,12 @@ L.tileLayer('https://api.mapbox.com/styles/v1/jserinchrist/ciqrajlqz0004bcnj7hpr
     accessToken: 'your.mapbox.public.access.token'
 }).addTo(mymap);
 
+          // var team = tableTeam
+          // team.onclick = function() {
+          //    map.setView(layer.getLatLng(), 14);
+          //    layer.openPopup();
+          // };
+
 // mymap.once('focus', function(){
 //     map.scrollWheelZoom.enable()
 // });
