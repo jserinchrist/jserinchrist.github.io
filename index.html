@@ -28,18 +28,37 @@
         <!-- Add your site or application content here -->
         <header>
             <h1>Premierish</h1>
-            <h4>The sun never sets on the Beautiful Game</h4>
         </header>
+    <div class="sticky-nav-wrapper">
+        <nav class="main-nav">
+            <a href="#latest">Latest</a>
+            <a href="#teamMap">Team Map</a>
+            <a href="#table">League Table</a>
+            <a href="#teamQuiz">Pick Your Premier Team</a>  
+        </nav>
+    </div>
         <article>
+         <section id="latest">
+            <div id="latest">
+            <h3>Latest</h3>
+            <h4>The Season Starts on August 13th</h4>
+            <p>Shake out the scarves and chill the stouts, it's football time. Week one is fast approaching and with it the start of a season under the rule of a new foxy king. This season reigning champions of the premier league, Leicester City, will face teams that have reloaded their rosters and acquired new coaches. They will also have the added challenge and pressure of competing in the Champions League. There is plenty to look forward to , but honestly, all I care about right now is who has the best new kit. Spoiler: it's not Tottenham.
+            </p>
+            </div>
+        </section>
+            <section id="teamMap">
             <h3>The Isle of Ballers</h3>
-            <div id="teamMap">
+            <h4>The sun never sets on the Beautiful Game</h4>
             <div id="container">
             <div id="mapid"> 
             </div>
-            </div>
-            <div id="table">
+        </div>
+        </section>
+        <section id="table">
+            <div>
                 <table name="leagueTable" id="leagueTable">
                     <thead>
+                        <th></th>
                         <th>Pos</th>
                         <th class="tableTeam">Club</th>
                         <th>GP</th>
@@ -48,13 +67,37 @@
                     </thead>
                     <tbody>
                     <tr>
+                        <td id="ars">ARS</td>
                         <td class="sortnr">3</td>
                         <td class="tableTeam">Arsenal</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
-                    <tr>
+                    <!--<table id="arsenalFacts">
+                        <thead>
+                           <th>Stadium</th> 
+                           <th>Nick names</th>  
+                            <th>Rivals</th>
+                            <th>Team Song</th>    
+                            <th>Factoid</th> 
+                        </thead>
+                        <tbody>
+                        <tr id="bournemouth">
+                        <td ahref="#">BOR</td>
+                        <td class="sortnr">2</td>
+                        <td class="tableTeam">Bournemouth</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+
+
+                    </tbody>
+                </table> -->
+
+                    
+                    <tr id="bournemouth">
+                        <td ahref="#" class="teamAbrv">BOR</td>
                         <td class="sortnr">2</td>
                         <td class="tableTeam">Bournemouth</td>
                         <td>0</td>
@@ -62,6 +105,7 @@
                         <td>0</td>
                     </tr>
                     <tr>
+                        <td ahref="#">BRN</td>
                         <td class="sortnr">1</td>
                         <td class="tableTeam">Burnley</td>
                         <td>0</td>
@@ -69,119 +113,136 @@
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>4</td>
+                        <td ahref="#">CHL</td>
+                        <td class="sortnr">20</td>
                         <td class="tableTeam">Chelsea</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>5</td>
+                        <td ahref="#">CRP</td>
+                        <td class="sortnr">5</td>
                         <td class="tableTeam">Crystal Palace</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>6</td>
+                        <td ahref="#">EVR</td>
+                        <td class="sortnr">6</td>
                         <td class="tableTeam">Everton</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>7</td>
+                        <td ahref="#">HUL</td>
+                        <td class="sortnr">7</td>
                         <td class="tableTeam">Hull</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>8</td>
+                        <td ahref="#">LCS</td>
+                        <td class="sortnr">8</td>
                         <td class="tableTeam">Leicester</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>9</td>
+                        <td ahref="#">LVP</td>
+                        <td class="sortnr">9</td>
                         <td class="tableTeam">Liverpool</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr id="manC">
-                        <td>10</td>
+                        <td ahref="#">MNC</td>
+                        <td class="sortnr">10</td>
                         <td class="tableTeam">Man City</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>11</td>
+                        <td ahref="#">MNU</td>
+                        <td class="sortnr">11</td>
                         <td class="tableTeam">Man Utd</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>12</td>
+                        <td ahref="#">MDB</td>
+                        <td class="sortnr">12</td>
                         <td class="tableTeam">Middlesbrough</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>13</td>
+                        <td ahref="#">SHM</td>
+                        <td class="sortnr">13</td>
                         <td class="tableTeam">Southampton</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>14</td>
+                        <td ahref="#">STK</td>
+                        <td class="sortnr">14</td>
                         <td class="tableTeam">Stoke</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>15</td>
+                        <td ahref="#">SUN</td>
+                        <td class="sortnr">15</td>
                         <td class="tableTeam">Sunderland</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>16</td>
+                        <td ahref="#">SWC</td>
+                        <td class="sortnr">16</td>
                         <td class="tableTeam">Swansea</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>17</td>
+                        <td ahref="#">TOT</td>
+                        <td class="sortnr">17</td>
                         <td class="tableTeam">Spurs</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>18</td>
+                        <td ahref="#">WAT</td>
+                        <td class="sortnr">18</td>
                         <td class="tableTeam">Watford</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>19</td>
+                        <td ahref="#">WBA</td>
+                        <td class="sortnr">19</td>
                         <td class="tableTeam">West Brom</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>20</td>
+                        <td ahref="#">WHU</td>
+                        <td class="sortnr">4</td>
                         <td class="tableTeam">West Ham</td>
                         <td>0</td>
                         <td>0</td>
@@ -214,23 +275,30 @@
 
                 </ol> -->
             </div>
-            </div>
             
-            <div id="teamQuiz">
+        </section>
+        <section id="teamQuiz">
+            <div id="quiz">
                 <button class="btn">What's Your Team?</button>
-        
             </div>
-    
+        </section>
         </article>
+    </body>
 
         
         <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
         <script src="//d3js.org/topojson.v1.min.js"></script>
         <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+        <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+        <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+        <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+        <script src="Leaflet.Sleep.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+
 
        
 
