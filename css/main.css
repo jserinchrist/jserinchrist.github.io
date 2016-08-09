@@ -93,6 +93,7 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -101,13 +102,36 @@ textarea {
     Mardi Gras: #3C0033;
     Dull Lime: #26B34C;
     Romance: #FCFCFD*/
-header{
-    margin-right:200px;
-    margin-left:200px;
-}
+
+/*  Arsenal: #FE0002;
+    Bournemouth: #E62333;
+    Burnley: #6A003A;
+    Chelsea: #0A4595;
+    Crystal Palace: #EB302E;
+    Everton:#00369C;
+    Hull City: #F6A22E;
+    Leicester: #273E8A;
+    Liverpool: #E31B23;
+    Man City: #6CAEE0;
+    Man U: #D81920;
+    MiddlesBrough: #DB1D23;
+    Southhampton: #D71920;
+    Stoke City: #D71F30;
+    Sunderland: #DB001B;
+    Swansea: #F5F5F5;
+    Tottenham: #041C51;
+    Watford: #FFEE00;
+    West Brom: #041C51;
+    West Ham: #7D2C3B;
+
+*/
+
 body{
     width: 100%;
     margin: 0 auto;
+}
+header{
+    padding-left: 10%;
 }
 article{
     width: 70%;
@@ -122,6 +146,8 @@ h1{
     font-weight:900;
     text-transform:uppercase;
     color:#3FDA77;
+    display: inline-block;
+
 }
 h2{
     font-family: 'Lato', sans-serif;
@@ -134,13 +160,26 @@ h3{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     color:#3C0033;
+    margin-bottom: 0;
 }
 h4{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color:#26B34C;
+    margin-top: 0;
+}
+h5{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color:#3C0033;
 }
 
+#logo{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color:#3C0033;
+    text-transform: none;
+}
 p{
     font-family: 'Lato', serif;
     font-weight:300;
@@ -151,30 +190,88 @@ p{
   height: 60px;
 }
 
+#mobilnav{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 60px;
+    transition: all 300ms ease-in-out;
+    transform: translateY(-100%);
+    z-index: 100;
+    visibility: hidden;
+}
+
+
+
+#mobilenav a {
+  display: inline-block;
+  margin: 1rem;
+  padding: .25rem 0;
+  text-decoration: none;
+  color: #7A7A7A;
+  font-size: 1rem;
+}
+
+
+
 nav {
   width: 100%;
   text-align: center;
   background-color: white;
   box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
-  transition: all 300ms ease-out;
+  transition: all 300ms ease-in-out;
   z-index: 1000;
+  position: relative;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-  display: inline-block;
-}
 
 nav a {
   display: inline-block;
   margin: 1rem;
   padding: .25rem 0;
   text-decoration: none;
-  color: #888;
+  color: #7A7A7A;
+  font-size: 1rem;
+
+}
+
+.navhover
+{
+    border-bottom: solid .2rem #3FDA77;
+    padding-bottom: .05rem;
+}
+
+.navclick
+{
+    border-bottom: solid .2rem #3FDA77;
+    padding-bottom: .05rem;
+    color:#3C0033 ;
+}
+
+#navContent h1:first-of-type{
+    visibility: hidden;
+    display: inline-block;
+    font-size:1rem;
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+}
+
+#navContent h1{
+    visibility: hidden;
+    display: inline-block;
+    font-size:1rem;
+    margin: 1rem;
+    margin-left: 0;
+    padding: .25rem 0;
+    padding-left: 0;
+    text-decoration: none;
+}
+
+
+#navContent{
+    transition: all 300ms ease-in-out;
+
 }
 
 nav .active {
@@ -182,43 +279,128 @@ nav .active {
 }
 
 .scrolled {
-  /* Step 1: Add styles for fixed nav */
   position:fixed;
   top:0;
 }
-#teamMap{
-    display:inline;
-    max-width:1000px;
-    margin:0 auto;
-    width:100%;
-    background-color:#3FDA77;    
-}
-#container{
-    display:block;
-    float:left;
-    width:100%;
-    max-height: 400px; 
-    margin: 0 auto;
-    margin-bottom: 40px;   
+
+.stickyTop{
 }
 
+button{
+    display: none;
+    text-align: center;
+    margin: 1rem;
+    padding: .2rem;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: .8rem;
+    background-color:#3FDA77;
+    transition: all 300ms ease-in-out;
+    outline: 0;
+}
+
+.btnclick{
+    background-color: #3C0033;
+    outline:0;
+}
+
+
 #mapid{ 
-    height: 400px;
+    display:block;
+    /*block*/
+    width: 50%;
+    float: left;
+    height: 459px;
     z-index: 50;
     }
 #table{
-    width: 100%;
-    display:block;
+    width: 50%;
+    /*inline-block*/
+    color: #3C0033;
     float:left;
     background-color:#FCFCFD;
-    border-color:#EA6293;
-    border-style:solid;
-    border-width:2px;
-    border-radius:5px;
-    padding-left:20px;
+    border-left: solid 1px #3C0033;
+    padding-left:0px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    z-index: 100;
 }
+
+#datawrapper{
+    border: solid 2px #7A7A7A;
+    border-radius: 5px;
+}
+
+.highlight{
+    background-color: #EA6293;
+    }
+
+.highlightArsenal{ 
+    background-color: #FE0002;}
+.highlightBournemouth{ 
+    background-color: #E62333;
+}
+.highlightBurnley{ 
+    background-color: #6A003A;
+}
+.highlightChelsea{ 
+    background-color: #0A4595;
+}
+.highlightCrystalPalace{ 
+    background-color: #EB302E;
+}
+.highlightEverton{ 
+    background-color:#00369C;
+}
+.highlightHullCity{ 
+    background-color: #F6A22E;
+}
+.highlightLeicester{ 
+    background-color: #273E8A;
+}
+.highlightLiverpool{ 
+    background-color: #E31B23;
+}
+.highlightManCity{ 
+    background-color: #6CAEE0;
+}
+.highlightManU{ 
+    background-color: #D81920;
+}
+.highlightMiddlesBrough{ 
+    background-color: #DB1D23;
+}
+.highlightSouthhampton{ 
+    background-color: #D71920;
+}
+.highlightStokeCity{ 
+    background-color: #D71F30;
+}
+.highlightSunderland{ 
+    background-color: #DB001B;
+}
+.highlightSwansea{ 
+    background-color: #F5F5F5;
+}
+.highlightTottenham{ 
+    background-color: #041C51;
+}
+.highlightWatford{ 
+    background-color: #FFEE00;
+}
+.highlightWestBrom{ 
+    background-color: #041C51;
+}
+.highlightWestHam{ 
+    background-color: #7D2C3B;
+}
+
+thead th{
+    background-color:#FCFCFD;
+    cursor: default;
+}
+
 th{
     font-family: 'Lato', sans-serif;
     font-weight:700;
@@ -235,6 +417,7 @@ table{
     display: table-row;
     vertical-align:middle;
     text-align: center;
+    cursor: pointer;
  }
 .tableTeam{
     text-align:left;
@@ -243,7 +426,7 @@ table{
 .teamAbrv{
     font-weight: 600;
 }
-#quiz{
+/*#quiz{
     padding-left:20px;
     height:150px;
     width: 100%;
@@ -251,9 +434,9 @@ table{
     border-radius:5px;
     display:inline-block;
     margin-bottom:50px;
-}
+}*/
 
-button{
+/*button{
     display:block;
     font-family:'Lato', sans-serif;
     font-weight:700;
@@ -266,11 +449,41 @@ button{
     position:relative;
     transform: translateY(-50%);
     top:50%;    
-}
+}*/
 
 .selected{
-    background-color:#3FDA77;
+    background-color:#EA6293;
+    color: #3C0033;
 }
+
+footer{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+footer h1, footer > #logo{
+    color: #7A7A7A;
+}
+
+footer> #logo{
+    padding-right: 30px;
+}
+footer a{
+    color: #7A7A7A;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.footerHover{
+    color:#3FDA77;
+    transition: all 100ms ease-in-out;
+}
+
+.active{
+    transform: translateY(2%);
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -354,8 +567,66 @@ button{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 700px) {
     /* Style adjustments for viewports that meet the condition */
+    #mapid{
+    display:block;
+    /*block*/
+    width: 100%;
+    float: left;
+    height: 200px;
+    z-index: 50;
+   }
+    #table{
+    width: 100%;
+    /*inline-block*/
+    color: #3C0033;
+    float:left;
+    height: 200px;
+    background-color:#FCFCFD;
+    border-left: none;
+    border-top: solid 1px #3C0033;
+    padding-left:0px;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+header {
+    display: none;
+}
+
+nav a{
+    display: none ;
+}
+
+#mobilnav{
+    visibility: visible;
+}
+
+#mobilnav a{
+    display: inline-block;
+}
+nav button{
+    display: inline-block;
+}
+
+#navContent h1:first-of-type{
+    visibility: visible;
+    display: inline-block;
+    font-size:1rem;
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+}
+
+#navContent h1{
+    visibility: visible;
+    display: inline-block;
+    font-size:1rem;
+    margin: 1rem;
+    margin-left: 0;
+    padding: .25rem 0;
+    padding-left: 0;
+    text-decoration: none;
 }
 
 @media print,
