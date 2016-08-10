@@ -142,7 +142,8 @@ $("#arsrow").click(function(){
             $(this).addClass('activeRow');
         }
     mymap.setView([51.5549, -0.1084], 10);
-    markerArs.bindPopup("<b>Arsenal</b><br>Emerites Stadium").openPopup();
+    markerArs.bindPopup("<b>Arsenal</b><br><em>Victoria Concordia Crescit, Victory Through Harmony</em><br><b>Founded:</b> 1886<br><b>Stadium:</b> Emirates Stadium<br><b>Manager:</b> Arsene Wenger<br><b>Nicknames:</b> The Gunners"
+).openPopup();
 });
 
 //BOURNEMOUTH INTERACTIONS
@@ -171,7 +172,8 @@ $("#bournerow").click(function(){
             $(this).addClass('activeRow');
         }
 mymap.setView([50.7352, -1.8383], 10);
-markerBorne.bindPopup("<b>AFC Bournemouth</b><br>Dean Court").openPopup();
+    markerBorne.bindPopup("<b>AFC Bournemouth</b><br><em>Together, Anything Is Possible</em><br><b>Founded:</b> 1899<br><b>Stadium:</b> Dean Court<br><b>Manager:</b> Eddie Howe<br><b>Nicknames:</b> The Cherries"
+).openPopup();
 });
 
 //BURNLEY INTERACTIONS
@@ -200,7 +202,7 @@ $("#brnrow").click(function(){
             $(this).addClass('activeRow');
         }
 mymap.setView([53.7890, -2.2302], 10);
-markerBRN.bindPopup("<b>Burnley</b><br>Turf Moor").openPopup();
+markerBRN.bindPopup("<b>Burnley</b><br><b>Founded:</b> 1882<br><b>Stadium:</b> Turf Moor<br><b>Manager:</b> Sean Dyche<br><b>Nicknames:</b> The Clarets").openPopup();
 });
 
 //CHELSEA INTERACTIONS
@@ -230,7 +232,8 @@ $("#chlrow").click(function(){
             $(this).addClass('activeRow');
         }
 mymap.setView([51.4817, -0.1910], 10);
-markerCHL.bindPopup("<b>Chelsea</b><br>Stamford Bridge").openPopup();
+markerCHL.bindPopup("<b>Chelsea</b><br><b>Founded:</b> 1905<br><b>Stadium:</b> Stamford Bridge<br><b>Manager:</b> Antonio Conte<br><b>Nicknames:</b> The Blues, The Pensioners"
+).openPopup();
 });
 
 //CRYSTAL PALACE INTERACTIONS
@@ -257,7 +260,8 @@ $("#crprow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([51.3983, -0.0866], 10);
-        markerCRP.bindPopup("<b>Crystal Palace</b><br>Selhurst Park").openPopup();
+        markerCRP.bindPopup("<b>Crystal Palace</b><br><b>Founded:</b> 1905<br><b>Stadium:</b> Selhurst Park<br><b>Manager:</b> Alan Pardew<br><b>Nicknames:</b> The Eagles, The Glaziers"
+).openPopup();
 });
 
 //EVERTON INTERACTIONS
@@ -285,7 +289,8 @@ $("#evrrow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([53.4388, -2.9663], 10);
-        markerEVR.bindPopup("<b>Everton</b><br>Goodison Park").openPopup();
+        markerEVR.bindPopup("<b>Everton</b><br><em>Nils Satis Nisi Optimum - Nothing but the best is good enough</em><br><b>Founded:</b> 1878<br><b>Stadium:</b> Goodison Park<br><b>Manager:</b> The Toffees, The Blues<br><b>Nicknames:</b> Ronald Koeman"
+).openPopup();
 });
 
 
@@ -313,7 +318,8 @@ $("#hulrow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([53.7462, -0.3675], 10);
-        markerHUL.bindPopup("<b>Hull City</b><br>KCOM Stadium").openPopup();
+        markerHUL.bindPopup("<b>Hull City</b><br><b>Founded:</b> 1904<br><b>Stadium:</b> KCOM Stadium<br><b>Manager:</b> Vacant<br><b>Nicknames:</b> The Tigers"
+).openPopup();
 });
 
 //LEICESTER INTERACTIONS
@@ -340,7 +346,8 @@ $("#lcsrow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([52.6204, -1.1422], 10);
-        markerLCS.bindPopup("<b>Leicester City</b><br>King Power Stadium").openPopup();
+        markerLCS.bindPopup("<b>Leicester City</b><br><b>Founded:</b> 1884<br><b>Stadium:</b> King Power Stadium<br><b>Manager:</b> Claudio Ranieri<br><b>Nicknames:</b> The Foxes"
+).openPopup();
 });
 
 //LIVERPOOL INTERACTIONS
@@ -368,7 +375,8 @@ $("#lvprow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([53.4308, -2.9608], 10);
-        markerLVP.bindPopup("<b>Liverpool</b><br>Anfield").openPopup();
+        markerLVP.bindPopup("<b>Liverpool</b><br><em>You'll Never Walk Alone</em><br><b>Founded:</b> 1892<br><b>Stadium:</b> Anfield<br><b>Manager:</b> Jurgen Klopp<br><b>Nicknames:</b> The Reds"
+).openPopup();
 });
 
 //MAN CITY INTERACTIONS
@@ -395,7 +403,8 @@ $("#manCrow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([53.4831, -2.2004], 10);
-        markerManC.bindPopup("<b>Manchester City</b><br>Etihad Stadium").openPopup();
+        markerManC.bindPopup("<b>Manchester City</b><br><em>Superbia in Proelia - Pride in Battle</em><br><b>Founded:</b> 1894<br><b>Stadium:</b> Etihad Stadium<br><b>Manager:</b> Pep Guardiola<br><b>Nicknames:</b> City, The Citizens, The Sky Blues"
+).openPopup();
 });
 
 //MAN U INTERACTIONS
@@ -423,7 +432,8 @@ $("#manUrow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([53.4631, -2.2913], 10);
-        markerManU.bindPopup("<b>Manchester United</b><br>Old Trafford").openPopup();
+        markerManU.bindPopup("<b>Manchester United</b><br><em>Youth, Courage, Greatness</em><br><b>Founded:</b> 1878<br><b>Stadium:</b> Old Trafford<br><b>Manager:</b> Jose Mourinho<br><b>Nicknames:</b> The Red Devils"
+).openPopup();
 });
 
 //MIDDLESBROUGH INTERACTIONS
@@ -451,7 +461,8 @@ if (mymap.getZoom() <= 7) {
             $(this).addClass('activeRow');
         }
         mymap.setView([54.5780, -1.2182], 10);
-        markerMDB.bindPopup("<b>Middlesbrough</b><br>Riverside Stadium").openPopup();
+        markerMDB.bindPopup("<b>Middlesbrough</b><br><b>Founded:</b> 1876<br><b>Stadium:</b> Riverside Stadium<br><b>Manager:</b> Aitor Karanka<br><b>Nicknames:</b> The Boro, Smoggies"
+).openPopup();
 });
 
 //SOUTHHAMPTON INTERACTIONS
@@ -478,7 +489,7 @@ $("#shmrow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([50.9055, -1.3912], 10);
-        markerSHM.bindPopup("<b>Southampton</b><br>St Mary's Stadium").openPopup();
+        markerSHM.bindPopup("<b>Southampton</b><br><b>Founded:</b> 1885<br><b>Stadium:</b> St Mary's Stadium<br><b>Manager:</b> Claude Puel<br><b>Nicknames:</b> The Saints").openPopup();
 });
 
 //STOKE INTERACTIONS
@@ -506,7 +517,8 @@ $("#stkrow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([52.9881, -2.1766], 10);
-        markerSTK.bindPopup("<b>Stoke City</b><br>Bet365 Stadium").openPopup();
+        markerSTK.bindPopup("<b>Stoke City</b><br><em>We March On</em><br><b>Founded:</b> 1863<br><b>Stadium:</b> Bet365 Stadium<br><b>Manager:</b> Mark Hughes<br><b>Nicknames:</b> The Potters"
+).openPopup();
 });
 
 //SUNDERLAND ROW
@@ -534,7 +546,8 @@ $("#sunrow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([54.9146, -1.3884], 10);
-        markerSUN.bindPopup("<b>Sunderland</b><br>Stadium of Light").openPopup();
+        markerSUN.bindPopup("<b>Sunderland</b><br><em>Consectatio Excellentiae - In Pursuit of Excellence</em><br><b>Founded:</b> 1879<br><b>Stadium:</b> Stadium of Light<br><b>Manager:</b> David Moyes<br><b>Nicknames:</b> The Black Cats"
+).openPopup();
 });
 
 //SWANSEA INTERACTIONS
@@ -564,7 +577,8 @@ $("#swcrow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([51.6427, -3.9346], 10);
-        markerSWC.bindPopup("<b>Swansea City</b><br>Liberty Stadium").openPopup();
+        markerSWC.bindPopup("<b>Swansea City</b><br><b>Founded:</b> 1912<br><b>Stadium:</b> Liberty Stadium<br><b>Manager:</b> Francesco Guidolin<br><b>Nicknames:</b> The Swans"
+).openPopup();
 });
 
 //TOTTENHAM INTERACTIONS
@@ -592,7 +606,8 @@ $("#totrow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([51.6032, -0.0657], 10);
-        markerTOT.bindPopup("<b>Tottenham</b><br>White Heart Lane").openPopup();
+        markerTOT.bindPopup("<b>Tottenham</b><br><em>Audere est Facere - To Dare Is to DO</em><b>Founded:</b> 1882<br><b>Stadium:</b> White Hart Lane<br><b>Manager:</b> Mauricio Pochettino<br><b>Nicknames:</b> Hotspurs, Spurs, The Lilywhites"
+).openPopup();
 });
 
 //WATFORD INTERACTIONS
@@ -620,7 +635,7 @@ $("#watrow").hover(function(){
             $(this).addClass('activeRow');
         }
         mymap.setView([51.6499, -0.4013], 10);
-        markerWAT.bindPopup("<b>Watford</b><br>Vicarage Road").openPopup();
+        markerWAT.bindPopup("<b>Watford</b><b>Founded:</b> 1881<br><b>Stadium:</b> Vicarage Road<br><b>Manager:</b> Walter Mazzarri<br><b>Nicknames:</b> The Hornets, The Golden Boys, Yellow Army, The 'Orns").openPopup();
 });
 
 //WESTBROM INTERACTIONS
@@ -649,7 +664,8 @@ if (mymap.getZoom() <= 7) {
             $(this).addClass('activeRow');
         }
         mymap.setView([52.5090, -1.9639], 10);
-        markerWBA.bindPopup("<b>West Bromwich Albion</b><br>The Hawthorns").openPopup();
+        markerWBA.bindPopup("<b>West Bromwich Albion</b><br><em>Labor Omnia Vincit - Labour Conquers All Things</em><br><b>Founded:</b> 1878<br><b>Stadium:</b> The Hawthorns<br><b>Manager:</b> Tony Pulis<br><b>Nicknames:</b> The Baggies, The Throstles, Albion"
+).openPopup();
 });
 
 //WESTHAM INTERACTIONS
@@ -678,8 +694,9 @@ if (mymap.getZoom() <= 7) {
         }
 
         mymap.setView([51.3219, -0.0059], 10);
-        markerWHU.bindPopup("<b>West Ham United</b><br>Olympic Stadium").openPopup();
+        markerWHU.bindPopup("<b>West Ham United</b><br><b>Founded:</b> 1895<br><b>Stadium:</b> Olympic Stadium<br><b>Manager:</b> Slaven Bilic<br><b>Nicknames:</b> The Irons, The Hammers, The Academy of Football").openPopup();
 });
+    //<b>West Ham United</b><br><b>Founded:</b> XX<br><b>Stadium:</b> XX<br><b>Manager:</b> XX<br><b>Nicknames:</b> XX"
 
 
 
